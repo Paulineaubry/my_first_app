@@ -11,13 +11,16 @@ https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv
 - display an image corresponding to the selected arrondissement
 
 # manipulate graphics
+From this link : https://github.com/mwaskom/seaborn-data
+
+- extract all csv
 - title it "Manipulation de données et création de graphiques"
 - display "Quel dataset veux-tu utiliser"
 - create a selectbox with datasets
 - display "Choisissez la colonne X"
 - create a selectbox with the columns
 - display "Choisissez la colonne Y"
-- create a selctbox with the columns
+- create a selectbox with the columns
 - display "Quel graphique veux-tu utiliser ?"
 - create a selectbox with :
     - scatter_chart
