@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv
 - display “Tu as choisi:” and the selected district
 - display an image corresponding to the selected arrondissement
 
-### manipulate graphics
+## manipulate graphics
 From this link : https://github.com/mwaskom/seaborn-data
 
 - extract all csv
