@@ -6,10 +6,12 @@ import pandas as pd
 # chargement du fichier csv
 df = pd.read_csv("login.csv")
 
+df.columns = df.columns.str.strip().str.upper()  # pour correspondre aux noms du fichier
+
 lesDonneesDesComptes = {
-    row["username"]: {
-        "name": row["name"],
-        "password": row["password"]
+    row["NAME"]: {
+        "name": row["NAME"],
+        "password": row["PASSWORD"]
     }
     for _, row in df.iterrows()
 }
