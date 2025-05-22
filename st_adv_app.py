@@ -38,9 +38,10 @@ if st.session_state["authentication_status"]:
        
         # bouton de déconnexion
         authenticator.logout("Déconnexion")
+        # menu de sélection
         selection = option_menu(
         menu_title=f"Bienvenue {st.session_state['username']}",  # Titre du menu
-        options=["Accueil", "Les photos de mon chat"],  # Options du menu
+        options=["Accueil", "L'album de mon chat"],  # Options du menu
         default_index=0  # Option sélectionnée par défaut
     )
     
