@@ -35,4 +35,18 @@ From this link : https://github.com/mwaskom/seaborn-data
 - Create a login page
 - Put an application online
 
+# app_st_adv
+- The application must include an authentication page giving access to the home page and the photo album of the cat (or any other animal of your choice).
+- The cat images are arranged so as to have 3 on the same line.
+- Account data will come from a csv file read with pandas in the streamlit application. This csv file will contain the following columns:
+    - name,
+    - password,
+    - email,
+    - failed_login_attemps,
+    - logged_in and role
+- The menu should be placed in the sidebar. This bar will also include : Logout and a welcome message such as Welcome username.
+- Finally, you'll need to deploy your application on the Streamlit cloud.
+
+
+
 
