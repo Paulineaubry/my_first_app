@@ -60,15 +60,15 @@ if st.session_state["authentication_status"]:
 
         # Contenu de la première colonne : 
         with col1:
-            st.video("https://raw.githubusercontent.com/tonpseudo/tonrepo/main/images/chat1.jpg")
+            st.video("https://raw.githubusercontent.com/Paulineaubry/start_on_streamlit/main/chat1.mp4")
 
         # Contenu de la deuxième colonne :
         with col2:
-            st.image("https://raw.githubusercontent.com/tonpseudo/tonrepo/main/images/chat2.jpg")
+            st.image("https://raw.githubusercontent.com/Paulineaubry/start_on_streamlit/main/chat2.jpg")
 
         # Contenu de la troisième colonne : 
         with col3:
-            st.video("https://raw.githubusercontent.com/tonpseudo/tonrepo/main/images/chat3.jpg")
+            st.video("https://raw.github.com/Paulineaubry/start_on_streamlit/main/0522(1).mp4")
 
         
 elif st.session_state["authentication_status"] is False:
