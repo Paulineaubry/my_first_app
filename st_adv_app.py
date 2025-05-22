@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_authenticator import Authenticate
+import pandas as pd
 
 # chargement du fichier csv
 lesDonneesDesComptes = charger_comptes_depuis_csv("login.csv")
