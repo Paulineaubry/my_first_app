@@ -46,10 +46,10 @@ if st.session_state["authentication_status"]:
     
 
     if selection == "Accueil":
-        st.title("Bienvenu sur ma page")
+        st.title("Bienvenue sur ma page")
         st.image("https://i.etsystatic.com/46682565/c/2048/1627/0/159/il/8e5e9f/5501111670/il_680x540.5501111670_5kwg.jpg")
     else :
-        st.title("Bienvenu dans l'album de mon chat")
+        st.title("Bienvenue dans l'album de mon chat")
         # Création de 3 colonnes 
         col1, col2, col3 = st.columns(3)
 
@@ -69,5 +69,5 @@ if st.session_state["authentication_status"]:
 elif st.session_state["authentication_status"] is False:
     st.error("L'username ou le password est/sont incorrect")
 elif st.session_state["authentication_status"] is None:
-    st.warning('Les champs username et mot de passe doivent être remplie')
+    st.warning('Les champs username et mot de passe doivent être remplis')
 
