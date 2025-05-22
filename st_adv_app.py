@@ -4,7 +4,15 @@ from streamlit_authenticator import Authenticate
 import pandas as pd
 
 # chargement du fichier csv
-lesDonneesDesComptes = charger_comptes_depuis_csv("login.csv")
+df = pd.read_csv("login.csv")
+
+lesDonneesDesComptes = {
+    row["username"]: {
+        "name": row["name"],
+        "password": row["password"]
+    }
+    for _, row in df.iterrows()
+}
 
 authenticator = Authenticate(
     lesDonneesDesComptes,  # Les données des comptes
