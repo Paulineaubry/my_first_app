@@ -27,6 +27,12 @@ From this link : https://github.com/mwaskom/seaborn-data
     - bar_chart
     - line_chart
 - create a checkbox and display "Afficher la matrice de corrélation"
-- if checkbox checked: display the correlation matrix of selected columns 
+- if checkbox checked: display the correlation matrix of selected columns
+
+# Streamlit advanced
+- Create a navigation menu
+- Organize the display of an application
+- Create a login page
+- Put an application online
 
 
