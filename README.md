@@ -1,6 +1,6 @@
-## Create apps with Streamlit
+# Create apps with Streamlit
 
-# my_first_app
+## my_first_app
 From this dataset:
 https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv
 
@@ -10,7 +10,7 @@ https://raw.githubusercontent.com/mwaskom/seaborn-data/master/taxis.csv
 - display “Tu as choisi:” and the selected district
 - display an image corresponding to the selected arrondissement
 
-# manipulate graphics
+## manipulate graphics
 From this link : https://github.com/mwaskom/seaborn-data
 
 - extract all csv
@@ -29,13 +29,13 @@ From this link : https://github.com/mwaskom/seaborn-data
 - create a checkbox and display "Afficher la matrice de corrélation"
 - if checkbox checked: display the correlation matrix of selected columns
 
-# Streamlit advanced
+## Streamlit advanced
 - Create a navigation menu
 - Organize the display of an application
 - Create a login page
 - Put an application online
 
-# app_st_adv
+## app_st_adv
 - The application must include an authentication page giving access to the home page and the photo album of the cat (or any other animal of your choice).
 - The cat images are arranged so as to have 3 on the same line.
 - Account data will come from a csv file read with pandas in the streamlit application. This csv file will contain the following columns:
