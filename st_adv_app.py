@@ -2,27 +2,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_authenticator import Authenticate
 
-# Nos données utilisateurs doivent respecter ce format
-lesDonneesDesComptes = {
-    'usernames': {
-        'chat': {
-            'name': 'chat',
-            'password': 'chat',
-            'email': 'chat@gmail.com',
-            'failed_login_attemps': 0,  # Sera géré automatiquement
-            'logged_in': False,          # Sera géré automatiquement
-            'role': 'utilisateur'
-        },
-        'root': {
-            'name': 'root',
-            'password': 'rootMDP',
-            'email': 'admin@gmail.com',
-            'failed_login_attemps': 0,  # Sera géré automatiquement
-            'logged_in': False,          # Sera géré automatiquement
-            'role': 'administrateur'
-        }
-    }
-}
+# chargement du fichier csv
+lesDonneesDesComptes = charger_comptes_depuis_csv("login.csv")
 
 authenticator = Authenticate(
     lesDonneesDesComptes,  # Les données des comptes
@@ -68,7 +49,7 @@ if st.session_state["authentication_status"]:
 
         # Contenu de la troisième colonne : 
         with col3:
-            st.video("https://raw.github.com/Paulineaubry/start_on_streamlit/main/0522(1).mp4")
+            st.video("https://raw.githubusercontent.com/Paulineaubry/start_on_streamlit/main/0522(1).mp4")
 
         
 elif st.session_state["authentication_status"] is False:
