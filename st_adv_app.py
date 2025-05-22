@@ -8,12 +8,15 @@ df = pd.read_csv("login.csv")
 
 df.columns = df.columns.str.strip().str.upper()  # pour correspondre aux noms du fichier
 
+# Construction de l'objet 'credentials' au format attendu
 lesDonneesDesComptes = {
-    row["NAME"]: {
-        "name": row["NAME"],
-        "password": row["PASSWORD"]
+    "usernames": {
+        row["NAME"]: {
+            "name": row["NAME"],
+            "password": row["PASSWORD"]
+        }
+        for _, row in df.iterrows()
     }
-    for _, row in df.iterrows()
 }
 
 authenticator = Authenticate(
